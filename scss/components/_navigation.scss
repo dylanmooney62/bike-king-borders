@@ -1,0 +1,93 @@
+.nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: $space-2xl;
+  padding-bottom: $space-2xl; 
+  transition: all $transition-fast;
+
+
+  @include respond(tab-land) {
+    padding: $space-lg 0;
+  }
+
+  // aligns shopping basket with hamburger menu
+  &-button:last-child {
+    transform: translateY(-3px);
+  }
+
+
+
+
+  &__logo {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: $text-4xl;
+    letter-spacing: $close-spacing;
+    text-decoration: none;
+    color: $cloud-white;
+    line-height: 1;
+
+    // increase logo on smaller devices as links are gone
+    @include respond(tab-land) {
+      font-size: $text-5xl + $text-lg;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: $text-base;
+    position: relative;
+    transition: all;
+    color: $cloud-white;
+
+    // removes on smaller devices
+    @include respond(tab-land) {
+      display: none;
+    }
+  
+
+    // green underline, not shown unless active or hovered
+    &::after {
+      transition: all $transition-medium;
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: .3rem;
+      background-color: $apple;
+      bottom: -3px;
+      left: 0;
+    }
+
+    // green underline, shown
+    &--active::after {
+      width: 115%;
+    }
+
+    &:focus::after {
+      width: 115%;
+    }
+
+    &:hover::after {
+      width: 115%;
+    }
+  }
+
+}
+
+
+
+
+
+
+

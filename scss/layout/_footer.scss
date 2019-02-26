@@ -1,0 +1,146 @@
+.footer {
+  background-color: $grey-wool;
+  padding: $space-4xl 0;
+
+  @include respond(phone) {
+    padding: $space-2xl 0;
+  }
+
+  &__container {
+    @include container();
+  }
+
+  &__logo {
+    text-align: center;
+    font-size: $text-5xl + $text-lg;
+    line-height: 1;
+    margin-bottom: $space-2xl;
+    display: inline-block;
+  }
+
+  &__nav {
+    border-bottom: 1px solid $cobblestone;
+    padding-bottom: $space-2xl;
+  }
+
+  // center nav and space evenly
+  &__nav-list {
+    margin: 0 auto;
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    @include respond(phone) {
+      width: 35rem;
+    }
+  }
+
+  &__nav-link {
+    position: relative;
+    text-decoration: none;
+    color: $cloud-white;
+    font-size: $text-base;
+    font-weight: 600;
+
+    // adds green border transition on hover
+    &::after {
+      transition: all $transition-medium;
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 0.3rem;
+      background-color: $apple;
+      bottom: -3px;
+      left: 0;
+    }
+
+    &--active::after {
+      width: 115%;
+    }
+
+    &:hover::after {
+      width: 115%;
+    }
+  }
+
+  &__bottom {
+    padding-top: $space-3xl;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    @include respond(phone) {
+      padding-top: $space-2xl;
+      flex-direction: column;
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+
+    & > *:not(:first-child) {
+      // as children a reversed this adds margin to first two children
+      @include respond(phone) {
+        margin-bottom: $space-2xl;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__list:nth-child(3) {
+    // add margin to footer icons
+    .footer__item:not(:first-child) {
+      margin-left: $space-2xl;
+    }
+
+    // gives same width as copyright so footer is centered
+    width: 15rem;
+  }
+
+  &__list:nth-child(2) {
+    align-self: center;
+    flex: 1;
+    justify-content: center;
+
+    .footer__item:not(:last-child) {
+      margin-right: $space-2xl;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $cloud-white;
+    font-size: $text-sm;
+    transition: all $transition-fast;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: $apple;
+    }
+  }
+
+  &__icon {
+    font-size: $text-lg;
+  }
+
+  &__copyright {
+    // same width as icons to make footer even
+    width: 15rem;
+    color: $cloud-white;
+    font-size: $text-xs;
+
+    // center when in one column layout
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+}

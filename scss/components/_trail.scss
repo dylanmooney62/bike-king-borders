@@ -1,0 +1,85 @@
+.trail {
+  background-color: $cloud-white;
+  display: grid;
+  // grid text and image take up one column each
+  grid-template-columns: 1fr 1fr;
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, min-content);
+
+    &:nth-child(even) {
+
+      .trail__image {
+        grid-row: 1/2;
+      }
+  
+      .trail__text-box {
+        grid-row: 3/4;
+      }
+    }
+  }
+
+
+
+  &__text-box {
+    padding: $space-3xl;
+    align-self: center;
+  }
+
+
+  &__title {
+    font-size: $text-4xl;
+    margin-bottom: $space-lg;
+    line-height: 1;
+  }
+
+  &__text {
+    font-size: $text-sm;
+    margin-bottom: $space-sm;
+    color: $grey-wool;
+
+   
+    &--list {
+      font-weight: 700;
+    }
+
+    &--last {
+      margin-bottom: $space-xl;
+    }
+
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__list {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: $space-xl;
+  }
+
+  &__item {
+    margin-bottom: $space-sm;
+    font-size: $text-sm;
+    display: flex;
+    align-items: baseline;
+    color: $grey-wool;
+    line-height: 2;
+
+    // changes bullet point to green dot
+    &::before {
+      color: $apple;
+      content: "\2022"; 
+      font-size: $text-2xl;
+      padding-right: $space-sm; 
+      transform: translateY(3px);
+    }
+  }
+
+
+}

@@ -1,0 +1,47 @@
+.form {
+  width: 100%;
+  max-width: 70rem;
+  text-align: center;
+
+  &__group {
+    width: 100%;
+     margin-bottom: $space-xl;
+     text-align: left;
+  }
+
+
+  &__label {
+    margin-bottom: $space-xs;
+    display: inline-block;
+    font-size: $text-sm;
+    text-transform: capitalize;
+  }
+
+
+  &__input,
+  &__textarea {
+    display: block;
+    width: 100%;
+
+    border-radius: 10rem;
+    border: 1px solid $night-sky;
+    font-size: $text-base;
+    padding: $space-sm $space-md;
+
+
+    &::placeholder {
+      color: #c9c9c9;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+  }
+
+  &__textarea {
+    height: 20rem;
+    border-radius: .6em;
+  }
+
+}

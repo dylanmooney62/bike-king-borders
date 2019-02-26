@@ -1,0 +1,43 @@
+@mixin container {
+  width: 95%;
+  max-width: 150rem;
+  margin: 0 auto;
+
+  @include respond(phone) {
+    width: 90%;
+  }
+}
+
+@mixin container--small {
+  max-width: 114rem;
+  margin: 0 auto;
+  width: 95%;
+
+  @include respond(phone) {
+    width: 90%;
+  }
+}
+
+
+// responsive mixin
+@mixin respond($breakpoint) {
+  @if $breakpoint==phone {
+    // 600px
+    @media (max-width: 46.875em) {@content;}
+  }
+
+  @if $breakpoint==tab-port {
+    // 900px
+    @media (max-width: 56.25em) {@content;}
+  }
+
+  @if $breakpoint==tab-land {
+    // 1200px
+    @media (max-width: 75em) {@content;}
+  }
+
+  @if $breakpoint==big-desktop {
+    // 1800px
+    @media (min-width: 112.5em) {@content;}
+  }
+}

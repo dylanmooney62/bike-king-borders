@@ -1,0 +1,25 @@
+.u-fade-in-delay {
+  animation: fadeIn .7s .3s forwards;
+}
+
+.u-fade-out-delay {
+  animation: fadeOut .7s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  } to {
+    opacity: 0;
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+}

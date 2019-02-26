@@ -1,0 +1,10 @@
+.main {
+  position: relative;
+  // required for paralax effect
+  background-color: $cloud-white;
+
+
+  &__container {
+    @include container();
+  }
+}

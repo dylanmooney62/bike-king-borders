@@ -1,0 +1,101 @@
+.button {
+  // removes button normal button styling
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+ 
+  // required for transitons effect
+  position: relative;
+  overflow: hidden;
+  z-index: 110;
+
+  padding: $space-xs $space-xl;
+  border-radius: 10rem;
+
+  // font and text
+  font-weight: 400;
+  font-size: $text-sm;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: center;
+
+  transition: color $transition-fast;
+
+
+  &--green {
+    color: $cloud-white;
+    border: 1px solid transparent;
+    background-color: $apple;
+  }
+
+  &--white {
+    color: $cloud-white;
+    border: 1px solid $cloud-white;
+
+    &:hover {
+      color: $night-sky !important;
+    }
+  }
+
+  &--black {
+    color: $night-sky;
+    border: 1px solid $night-sky;
+
+    &:hover {
+      color: $cloud-white !important;
+    }
+  }
+
+  &--large {
+    padding: $space-sm $space-2xl;
+    font-size: $text-base;
+  }
+
+  &__transition {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    transition: width $transition-medium;
+
+    &--white {
+      background-color: $cloud-white;
+    }
+
+    &--black {
+      background-color: $night-sky;
+    }
+
+  }
+
+
+  &:hover &__transition {
+    width: 100%;
+  }
+}
+
+
+// secondary buttons with underline
+.button-secondary {
+
+  text-decoration: none;
+  font-size: $text-sm;
+  position: relative;
+  color: $night-sky;
+  transition: all $transition-fast;
+
+
+
+  // underline under button
+  &::after {
+    content: "";
+    position: absolute;
+    width: 115%;
+    height: .3rem;
+    background-color: $night-sky;
+    bottom: -3px;
+    left: 0;
+  }
+}

@@ -1,0 +1,47 @@
+.header {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  // add overlay to paralax image
+  background-image: linear-gradient(
+    rgba(19, 19, 19, 0.3),
+    rgba(19, 19, 19, 0.9)
+  );
+
+  &__container {
+    @include container();
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 47.5%;
+    max-width: 85rem;
+    width: 100%;
+    transform: translateY(-50%);
+    padding-left: $space-2xl;
+
+    @include respond(tab-land) {
+      padding-left: 0;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 8rem;
+    margin-bottom: $space-md;
+    letter-spacing: $close-spacing;
+    cursor: default;
+    color: $cloud-white;
+  }
+
+  &__text {
+    font-size: $text-base;
+    line-height: 2;
+    font-weight: 300;
+    margin-bottom: $space-xl;
+    color: $cloud-white-transparent;
+  }
+}

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bike King Borders | Servicing</title>
+    <!-- links -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/parallax.min.js"></script>
+  </head>
+
+  <body>
+    <div
+      class="u-parallax"
+      data-parallax="scroll"
+      data-image-src="assets/images/hero-images/cyclist-on-roof.jpeg"
+    >
+      <header class="header">
+        <nav class="mobile-nav" id="mobile-nav">
+          <div class="mobile-nav__top">
+            <button class="nav-button" id="navigation-close">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <ul class="mobile-nav__list" id="mobile-nav-list">
+            <li class="mobile-nav__item">
+              <a href="index.html" class="mobile-nav__link">Home</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="bikes.html" class="mobile-nav__link">Bikes</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="trails.html" class="mobile-nav__link">Trails</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="hire.html" class="mobile-nav__link">Hire</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a
+                href="servicing.html"
+                class="mobile-nav__link mobile-nav__link--active"
+                >Servicing</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__container">
+          <nav class="nav nav-visible" id="nav">
+            <button class="nav-button" id="navigation-open">
+              <i class="nav__icon fas fa-bars"></i>
+            </button>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="bikes.html" class="nav__link">Bikes</a>
+              </li>
+              <li class="nav__item">
+                <a href="trails.html" class="nav__link">Trails</a>
+              </li>
+              <li class="nav__item">
+                <a href="index.html" class="nav__logo">BKB</a>
+              </li>
+              <li class="nav__item">
+                <a href="hire.html" class="nav__link">Hire</a>
+              </li>
+              <li class="nav__item">
+                <a href="servicing.html" class="nav__link nav__link--active"
+                  >Servicing</a
+                >
+              </li>
+            </ul>
+            <button class="nav-button">
+              <i class="nav__icon fas fa-shopping-bag"></i>
+            </button>
+          </nav>
+          <div class="header__text-box">
+            <h1 class="header__title">
+              The <span class="u-text-highlight"> best </span>Service
+            </h1>
+            <p class="header__text">
+              We offer many services, from a general service to a complete
+              overhaul at competitive prices
+            </p>
+            <a class="button button--white" href="#services"
+              >View services<span
+                class="button__transition button__transition--white"
+              ></span
+            ></a>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main class="main">
+      <div class="main__triangle main__triangle--white"></div>
+      <section class="section section--services" id="services">
+        <div class="section__container">
+          <div class="section__grid">
+            <div class="service">
+              <h2 class="service__title">Safety</h2>
+              <div class="service__price">
+                <small class="service__pound">£</small>35<small
+                  class="service__per-bike"
+                  >per bike</small
+                >
+              </div>
+              <ul class="service__list">
+                <li class="service__item">
+                  Safety check
+                  <i
+                    class="service__icon service__icon--check fas fa-check"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  Full checkup
+                  <i
+                    class="service__icon service__icon--times fas fa-times"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  Full clean
+                  <i
+                    class="service__icon service__icon--times fas fa-times"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  Strip down and service
+                  <i
+                    class="service__icon service__icon--times fas fa-times"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  Service on suspension units
+                  <i
+                    class="service__icon service__icon--times fas fa-times"
+                  ></i>
+                </li>
+              </ul>
+              <a href="#" class="button button--green">Book now</a>
+            </div>
+            <div class="service">
+              <h2 class="service__title">General</h2>
+              <div class="service__price">
+                <small class="service__pound">£</small>50<small
+                  class="service__per-bike"
+                  >per bike</small
+                >
+              </div>
+              <ul class="service__list">
+                <li class="service__item">
+                  Safety check
+                  <i
+                    class="service__icon service__icon--check fas fa-check"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  Full checkup
+                  <i
+                    class="service__icon service__icon--check fas fa-check"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  Full clean
+                  <i
+                    class="service__icon service__icon--times fas fa-times"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  Strip down and service
+                  <i
+                    class="service__icon service__icon--times fas fa-times"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  Service on suspension units
+                  <i
+                    class="service__icon service__icon--times fas fa-times"
+                  ></i>
+                </li>
+              </ul>
+              <a href="#" class="button button--green">Book now</a>
+            </div>
+            <div class="service">
+              <h2 class="service__title">Overhaul</h2>
+              <div class="service__price">
+                <small class="service__pound">£</small>70<small
+                  class="service__per-bike"
+                  >per bike</small
+                >
+              </div>
+              <ul class="service__list">
+                <li class="service__item">
+                  safety check
+                  <i
+                    class="service__icon service__icon--check fas fa-check"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  full checkup
+                  <i
+                    class="service__icon service__icon--check fas fa-check"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  full clean
+                  <i
+                    class="service__icon service__icon--check fas fa-check"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  strip down and service
+                  <i
+                    class="service__icon service__icon--times fas fa-times"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  service on suspension units
+                  <i
+                    class="service__icon service__icon--times fas fa-times"
+                  ></i>
+                </li>
+              </ul>
+              <a href="#" class="button button--green">Book now</a>
+            </div>
+            <div class="service">
+              <h2 class="service__title">Full package rigid</h2>
+              <div class="service__price">
+                <small class="service__pound">£</small>99<small
+                  class="service__per-bike"
+                  >per bike</small
+                >
+              </div>
+              <ul class="service__list">
+                <li class="service__item">
+                  Safety check
+                  <i
+                    class="service__icon service__icon--check fas fa-check"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  Full checkup
+                  <i
+                    class="service__icon service__icon--check fas fa-check"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  Full clean
+                  <i
+                    class="service__icon service__icon--check fas fa-check"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  Strip down and service
+                  <i
+                    class="service__icon service__icon--check fas fa-check"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  Service on suspension units
+                  <i
+                    class="service__icon service__icon--times fas fa-times"
+                  ></i>
+                </li>
+              </ul>
+              <a href="#" class="button button--green">Book now</a>
+            </div>
+            <div class="service">
+              <h2 class="service__title">Full package suspension</h2>
+              <div class="service__price">
+                <small class="service__pound">£</small>125<small
+                  class="service__per-bike"
+                  >per bike</small
+                >
+              </div>
+              <ul class="service__list">
+                <li class="service__item">
+                  Safety check
+                  <i
+                    class="service__icon service__icon--check fas fa-check"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  Full checkup
+                  <i
+                    class="service__icon service__icon--check fas fa-check"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  Full clean
+                  <i
+                    class="service__icon service__icon--check fas fa-check"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  Strip down and service
+                  <i
+                    class="service__icon service__icon--check fas fa-check"
+                  ></i>
+                </li>
+                <li class="service__item">
+                  Service on suspension units
+                  <i
+                    class="service__icon service__icon--check fas fa-check"
+                  ></i>
+                </li>
+              </ul>
+              <a href="#" class="button button--green">Book now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="cta">
+        <div class="cta__container">
+          <h4 class="cta__title">Join our monthly news letter</h4>
+          <form action="#" class="cta__form">
+            <input
+              type="text"
+              class="cta__form-input"
+              placeholder="you@email.com"
+            />
+            <button class="button button--green button--large">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="u-text-align-center">
+          <a href="index.html" class="logo footer__logo">BKB</a>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="bikes.html" class="footer__nav-link">Bikes</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="trails.html" class="footer__nav-link">Trails</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="hire.html" class="footer__nav-link">Hire</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="servicing.html" class="footer__nav-link">Servicing</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            <small>Bike King Borders &copy; 2018</small>
+          </p>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Sitemap</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link"
+                ><i class="fab fa-tripadvisor footer__icon"></i
+              ></a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link"
+                ><i class="fab fa-facebook footer__icon"></i
+              ></a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link"
+                ><i class="fab fa-twitter footer__icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/nav.js"></script>
+  </body>
+</html>

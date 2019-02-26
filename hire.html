@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bike King Borders | Hire</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- links -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/parallax.min.js"></script>
+  </head>
+
+  <body>
+    <div
+      class="u-parallax"
+      data-parallax="scroll"
+      data-image-src="assets/images/hero-images/cyclist.jpeg"
+    >
+      <header class="header">
+        <nav class="mobile-nav" id="mobile-nav">
+          <div class="mobile-nav__top">
+            <button class="nav-button" id="navigation-close">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <ul class="mobile-nav__list" id="mobile-nav-list">
+            <li class="mobile-nav__item">
+              <a href="index.html" class="mobile-nav__link">Home</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="bikes.html" class="mobile-nav__link">Bikes</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="trails.html" class="mobile-nav__link">Trails</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a
+                href="hire.html"
+                class="mobile-nav__link mobile-nav__link--active"
+                >Hire</a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a href="servicing.html" class="mobile-nav__link">Servicing</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__container">
+          <nav class="nav nav-visible" id="nav">
+            <button class="nav-button" id="navigation-open">
+              <i class="nav__icon fas fa-bars"></i>
+            </button>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="bikes.html" class="nav__link">Bikes</a>
+              </li>
+              <li class="nav__item">
+                <a href="trails.html" class="nav__link">Trails</a>
+              </li>
+              <li class="nav__item">
+                <a href="index.html" class="nav__logo">BKB</a>
+              </li>
+              <li class="nav__item">
+                <a href="hire.html" class="nav__link nav__link--active">Hire</a>
+              </li>
+              <li class="nav__item">
+                <a href="servicing.html" class="nav__link">Servicing</a>
+              </li>
+            </ul>
+            <button class="nav-button">
+              <i class="nav__icon fas fa-shopping-bag"></i>
+            </button>
+          </nav>
+          <div class="header__text-box">
+            <h1 class="header__title">
+              Hire <span class="u-text-highlight">great</span> bikes
+            </h1>
+            <p class="header__text">
+              Our bikes are maintained to the highest standards and serviced
+              before every hire. We are based close to Castle Douglas which is
+              close to many of the borders internationally renowned bike trails.
+            </p>
+            <a class="button button--white" href="#hire"
+              >Hire bike<span
+                class="button__transition button__transition--white"
+              ></span
+            ></a>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <main class="main">
+      <section class="section section--hire" id="hire">
+        <div class="section__container">
+          <h2 class="section__title">Hire</h2>
+          <div class="section__grid">
+            <table class="table">
+              <thead class="table__head">
+                <tr class="table__row">
+                  <th class="table__title">&nbsp;</th>
+                  <th class="table__title">Half day</th>
+                  <th class="table__title">Full day</th>
+                </tr>
+              </thead>
+              <tbody class="table__body">
+                <tr class="table__row">
+                  <td class="table__data">Childrens mountain bike</td>
+                  <td class="table__data">£15</td>
+                  <td class="table__data">£20</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">Electric mountain bike</td>
+                  <td class="table__data">£35</td>
+                  <td class="table__data">£45</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">Suspension mountain bike</td>
+                  <td class="table__data">£40</td>
+                  <td class="table__data">£50</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">Hybrid Bike</td>
+                  <td class="table__data">£20</td>
+                  <td class="table__data">£30</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">Hardtail</td>
+                  <td class="table__data">£25</td>
+                  <td class="table__data">£35</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__data">Road Bike</td>
+                  <td class="table__data">£25</td>
+                  <td class="table__data">£35</td>
+                </tr>
+              </tbody>
+            </table>
+            <form action="#" class="form">
+              <div class="form__group">
+                <label for="name" class="form__label">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  class="form__input"
+                  id="name"
+                  required
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="form__group">
+                <label for="email" class="form__label">
+                  email
+                </label>
+                <input
+                  type="text"
+                  class="form__input"
+                  id="email"
+                  required
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="form__group">
+                <label for="message" class="form__label">
+                  message
+                </label>
+                <textarea
+                  class="form__textarea"
+                  id="message"
+                  required
+                  placeholder="Please specify what bike and dates you'd like to hire for and we'll get back to you as soon as possible"
+                ></textarea>
+              </div>
+              <button type="submit" class="button button--green button--large">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="cta">
+        <div class="cta__container">
+          <h4 class="cta__title">Join our monthly news letter</h4>
+          <form action="#" class="cta__form">
+            <input
+              type="text"
+              class="cta__form-input"
+              placeholder="you@email.com"
+            />
+            <button class="button button--green button--large">
+              subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="u-text-align-center">
+          <a href="index.html" class="logo footer__logo">BKB</a>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="bikes.html" class="footer__nav-link">Bikes</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="trail.html" class="footer__nav-link">Trails</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="hire.html" class="footer__nav-link">Hire</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="servicing.html" class="footer__nav-link">Servicing</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            <small>Bike King Borders &copy; 2018</small>
+          </p>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Sitemap</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link"
+                ><i class="fab fa-tripadvisor footer__icon"></i
+              ></a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link"
+                ><i class="fab fa-facebook footer__icon"></i
+              ></a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link"
+                ><i class="fab fa-twitter footer__icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/nav.js"></script>
+  </body>
+</html>

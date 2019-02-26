@@ -1,0 +1,53 @@
+.cta {
+
+  padding: $space-5xl 0;
+
+
+
+  &__container {
+    @include container();
+    text-align: center;
+  }
+
+  &__title {
+    line-height: 1;
+    font-size: $text-2xl;
+    margin-bottom: $space-2xl;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__form-input {
+    border-radius: 10rem;
+    border: 1px solid $night-sky;
+    font-size: $text-base;
+    padding: $space-sm $space-md;
+    margin-right: $space-2xl;
+    width: 35rem;
+    
+
+    @include respond(phone) {
+      margin-bottom: $space-xl;
+      margin-right: 0;
+      width: 100%;
+      max-width: 70rem;
+    }
+
+    &::placeholder {
+      color: #c9c9c9;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
